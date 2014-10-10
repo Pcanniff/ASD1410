@@ -1,0 +1,3 @@
+var net = require("network");
+console.log("Three");
+console.log(netCheck);

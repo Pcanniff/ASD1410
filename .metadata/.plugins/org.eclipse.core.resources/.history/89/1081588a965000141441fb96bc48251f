@@ -1,0 +1,36 @@
+var builder = function(useable){
+	//Main Window
+	var win = Ti.UI.createWindow({
+	backgroundColor: "#ccc"
+});
+	var title = Ti.UI.createLabel({
+		top: "22dp",
+		backgroundColor: "#ccc",
+		text: "Updated Space News"
+	});
+	//Table View
+	var tableView = Ti.UI.createTableView({
+		top: "54dp",
+		data: useable
+	});
+	var webView = Ti.UI.createWebView({
+		url: useable.url
+	});
+
+
+
+
+
+
+tableView.addEventListener('click', function(evt){
+	console.log(JSON.stringify(evt.source.url));
+	//win.add(webView);
+});
+
+win.add(title);
+win.add(tableView);
+win.open();
+};
+
+exports.builder = builder;
+

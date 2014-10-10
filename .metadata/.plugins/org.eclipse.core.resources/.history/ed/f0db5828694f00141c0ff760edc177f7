@@ -1,0 +1,25 @@
+console.log("Two");
+var validity = function(){
+	console.log("One");
+	var url = "http://api.reddit.com/r/bunny";
+	if (Ti.Network.online){
+		console.log("Three");
+		var client = Ti.Network.createHTTPClient({
+			onload: function(evt){
+				var data = this.responseText;
+				console.log(data);
+			},
+			onerror: function(evt){
+				alert("Something went wrong. :(");
+			}
+		});
+		client.open("GET", url);
+		client.send();
+	} else {
+		alert("How did you expect to grade this without connecting to the Internet? Please check your connection!");
+	};
+};
+
+
+exports.netCheck = validity;
+

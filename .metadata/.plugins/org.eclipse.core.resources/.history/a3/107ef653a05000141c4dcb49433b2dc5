@@ -1,0 +1,51 @@
+var builder = function(useable) {
+	//Main Window
+	var win = Ti.UI.createWindow({
+		backgroundColor : "#ccc"
+	});
+	// Title Label
+	var title = Ti.UI.createLabel({
+		top : "22dp",
+		backgroundColor : "#ccc",
+		text : "Updated Space News"
+	});
+	//Table View
+	var tableView = Ti.UI.createTableView({
+		top : "54dp",
+		data : useable
+	});
+	
+	//Web View creation
+	for (n in useable) {
+		var webWin = Ti.UI.createWindow({
+			backgroundColor: "#ccc"
+		});
+		var webView = Ti.UI.createWebView({
+			url : useable[n].link,
+		});
+		var close = Ti.UI.createWebView({
+			title: "Close",
+			height: "5%",
+			width: "10%",
+			bottom : "5%",
+			right : "10%"
+		});
+		webWin.add(webView);
+		webView.add(close);
+		close.addEventListener('click', function() {
+			win.remove(webView);
+		});
+	}
+
+	tableView.addEventListener('click', function(evt) {
+		//webView.url = evt.
+		win.add(webView);
+	});
+
+	win.add(title);
+	win.add(tableView);
+	win.open();
+};
+
+exports.builder = builder;
+

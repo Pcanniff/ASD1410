@@ -7,6 +7,10 @@ var mainWin = Ti.UI.createWindow({
 	fullscreen : true,
 });
 
+
+
+
+
 //Label Creation
 var header = Ti.UI.createLabel({
 	text : "Shuttle and Rocket Data",

@@ -1,7 +1,0 @@
-"/Users/philipcanniff/Desktop/Advanced SDI/Canniff_Philip_ProjectOne1410/build/android/gen/android/support/v7/appcompat/R.java"
-"/Users/philipcanniff/Desktop/Advanced SDI/Canniff_Philip_ProjectOne1410/build/android/gen/com/ProjectOne/ApplicationStylesheet.java"
-"/Users/philipcanniff/Desktop/Advanced SDI/Canniff_Philip_ProjectOne1410/build/android/gen/com/ProjectOne/Canniff_philip_projectone1410Activity.java"
-"/Users/philipcanniff/Desktop/Advanced SDI/Canniff_Philip_ProjectOne1410/build/android/gen/com/ProjectOne/Canniff_philip_projectone1410AppInfo.java"
-"/Users/philipcanniff/Desktop/Advanced SDI/Canniff_Philip_ProjectOne1410/build/android/gen/com/ProjectOne/Canniff_philip_projectone1410Application.java"
-"/Users/philipcanniff/Desktop/Advanced SDI/Canniff_Philip_ProjectOne1410/build/android/gen/com/ProjectOne/R.java"
-"/Users/philipcanniff/Desktop/Advanced SDI/Canniff_Philip_ProjectOne1410/build/android/gen/ti/modules/titanium/ui/R.java"

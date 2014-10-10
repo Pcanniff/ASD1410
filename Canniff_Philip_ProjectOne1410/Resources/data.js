@@ -37,7 +37,6 @@ Falcon5.average = function() {
 }, Falcon5.content = function() {
 	alert("The " + this.title + " supports " + average + "lbs into low earth orbit for every pound it weighs!");
 };
-
 var FalconHeavy = new Object();
 FalconHeavy.title = "Falcon Heavy";
 FalconHeavy.top = "390dp";
@@ -131,5 +130,5 @@ var myData = [{
 		alert(this.title + " shuttle orbited the Earth on average " + average + " times per mission.");
 	},
 }, Falcon9, Grasshopper, Falcon5, FalconHeavy, Falcon1e];
-
+console.log(myData[0].title);
 module.exports = myData;

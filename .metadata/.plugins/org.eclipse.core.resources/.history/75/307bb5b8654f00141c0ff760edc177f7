@@ -1,0 +1,2 @@
+var clearance = Ti.Network.online;
+console.log(clearance);
